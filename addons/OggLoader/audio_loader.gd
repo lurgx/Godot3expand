@@ -6,8 +6,6 @@ export(String, FILE, "*.ogg") var path_song setget set_path_song
 export(float, -80, 24.0) var volume = 1.0 setget set_volume
 export(float, 0.01, 4.0) var pitch = 1.0 
 export(bool) var autoplay = false
-export(bool) var loop = false setget set_loop
-
 var bus := "Master" setget set_bus  # Ahora se puede modificar
 var player: AudioStreamPlayer
 
@@ -80,10 +78,6 @@ func pause():
 func resume():
 	player.stream_paused = false
 
-func set_loop(value):
-	loop = value
-	if player:
-		player.stream.loop = loop
 
 func set_volume(value):
 	volume = value
@@ -98,7 +92,6 @@ func _ready():
 		add_child(player)
 		player.bus = bus
 		set_volume(volume)
-		set_loop(loop)
 
 	if path_song != "":
 		load_audio(path_song)
