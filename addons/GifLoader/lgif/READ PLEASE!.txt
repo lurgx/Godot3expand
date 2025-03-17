@@ -1,0 +1,35 @@
+Pon esta carpeta en la ruta de tu juego
+Si! debes meter tu juego en una carpeta me refiero al .exe ya exportado
+Algo como ,
+/Supernova/lgif 
+
+../
+supernova.exe
+supernova.pck
+lgif/
+
+
+Si estas editando en el motor porfavor pon la carpeta de la misma manera
+Esta vez ponla dentro de la caperta donde esta el motor
+
+
+/Godot3.6/lgif
+
+../
+Gotod3.6-estable.exe
+Godot3.6-withConsolo.exe
+lgif/
+
+Pon las gifs dentro de la capeta y en el nodo pon unicamente el nombre de la imagen sin extension 
+
+Migif.gif  (X) esto no se debe hacer
+
+Lo correcto seria 
+
+Migif (O)esto cargara bien la imagen
+
+Procede a presionar 2 veces loadgif en el editor para cargar la imagen 
+Pon play y mira como se mueve tu gif
+
+
+
