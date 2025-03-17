@@ -1,0 +1,1 @@
+Remember add inputs.gd how singleton or autoload.
